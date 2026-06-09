@@ -452,7 +452,7 @@
     var email=document.getElementById('newsEmail').value.trim();
     if(!emailOk(email)){nMsg.textContent="Please check your email address.";return;}
     nBtn.disabled=true;nMsg.textContent="";
-    sb.from('reservations').insert({name:'Candleholder',email:email,source:'newsletter'}).then(function(res){
+    sb.from('mailing_list').upsert({email:email.toLowerCase(),source:'footer'},{onConflict:'email',ignoreDuplicates:true}).then(function(res){
       if(res.error){nBtn.disabled=false;nMsg.textContent="Please try again in a moment.";return;}
       nForm.style.display="none";
       nMsg.textContent="You are on the list. We will write before the next session.";
