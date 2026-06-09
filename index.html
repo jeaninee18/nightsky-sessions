@@ -452,8 +452,8 @@
     var email=document.getElementById('newsEmail').value.trim();
     if(!emailOk(email)){nMsg.textContent="Please check your email address.";return;}
     nBtn.disabled=true;nMsg.textContent="";
-    sb.from('mailing_list').upsert({email:email.toLowerCase(),source:'footer'},{onConflict:'email',ignoreDuplicates:true}).then(function(res){
-      if(res.error){nBtn.disabled=false;nMsg.textContent="Please try again in a moment.";return;}
+    sb.from('mailing_list').insert({email:email.toLowerCase(),source:'footer'}).then(function(res){
+      if(res.error){if(res.error.code==="23505"){nForm.style.display="none";nMsg.textContent="You are already on the list.";return;}nBtn.disabled=false;nMsg.textContent="Please try again in a moment.";return;}
       nForm.style.display="none";
       nMsg.textContent="You are on the list. We will write before the next session.";
     });
