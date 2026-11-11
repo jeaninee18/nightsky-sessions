@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0A0A0A">
+<title>Privacy · NightSky Sessions</title>
+<meta name="description" content="How NightSky Sessions handles the information you share with us.">
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" href="nightsky_sessions_dome_submark_transparent.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Cormorant+Garamond:ital,wght@0,400;1,400&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --black:#0A0A0A; --indigo:#0D1B2A; --gold:#C9A84C; --ember:#E85D04;
+    --offwhite:#F0ECE4; --smoke:#2B2B2B; --maxw:760px; --nav-h:80px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+  body{background:var(--black);color:var(--offwhite);font-family:"Source Sans 3",system-ui,sans-serif;font-size:18px;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+  img{max-width:100%;display:block}
+  a{color:var(--gold);text-decoration:none;-webkit-tap-highlight-color:transparent}
+  a:hover{text-decoration:underline}
+  h1,h2{font-family:"Playfair Display",Georgia,serif;line-height:1.12;letter-spacing:0}
+  h1{font-weight:900;font-size:clamp(34px,6vw,60px);color:var(--gold)}
+  h2{font-weight:700;font-size:clamp(22px,3.4vw,30px);color:var(--offwhite);margin:52px 0 16px}
+  p{margin-bottom:18px;color:rgba(240,236,228,.9)}
+  .tagline{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-weight:400}
+  .meta{font-family:"Source Sans 3",sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.2em;font-size:12px;color:rgba(240,236,228,.6)}
+  header.nav{position:sticky;top:0;z-index:1000;height:var(--nav-h);display:flex;align-items:center;justify-content:space-between;padding:0 max(24px,env(safe-area-inset-left));background:rgba(10,10,10,.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(201,168,76,.18);}
+  header.nav .brand{display:flex;align-items:center;min-height:44px}
+  header.nav .brand img{height:34px;width:auto}
+  header.nav .back{color:var(--offwhite);font-weight:600;text-transform:uppercase;letter-spacing:.2em;font-size:12px;opacity:.82;display:inline-flex;align-items:center;min-height:44px}
+  header.nav .back:hover{opacity:1;color:var(--gold);text-decoration:none}
+  main{max-width:var(--maxw);margin:0 auto;padding:72px 24px 96px}
+  .doc-head{margin-bottom:48px}
+  .doc-head .tagline{font-size:clamp(20px,3vw,26px);color:var(--gold);margin-top:18px}
+  .doc-head .meta{margin-top:24px;display:block}
+  ul{margin:0 0 18px 22px}
+  li{margin-bottom:10px;color:rgba(240,236,228,.9)}
+  .hairline{height:1px;background:var(--smoke);border:0;margin:56px 0}
+  footer{background:var(--indigo);text-align:center;padding:48px 24px calc(40px + env(safe-area-inset-bottom));position:relative}
+  footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:.45}
+  footer .foot-tag{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:20px;color:var(--gold);margin-bottom:16px}
+  footer .legal{font-size:12px;letter-spacing:.06em;color:rgba(240,236,228,.5)}
+  footer .legal a{color:rgba(240,236,228,.7)}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="/" aria-label="NightSky Sessions home">
+    <img src="nightsky_sessions_wordmark_transparent_400w.png" alt="NightSky Sessions">
+  </a>
+  <a class="back" href="/">&larr;&nbsp;&nbsp;Back</a>
+</header>
+
+<main>
+  <div class="doc-head">
+    <h1>Privacy</h1>
+    <p class="tagline">What we hold, and what we never do with it.</p>
+    <span class="meta">Last updated 11 November 2026</span>
+  </div>
+
+  <p>NightSky Sessions is an intimate acoustic concert series at TELUS World of Science - Edmonton. This page explains, plainly, what information we collect through this website and how we use it. We keep this short on purpose, because we collect very little.</p>
+
+  <h2>What we collect</h2>
+  <p>When you join our mailing list, we collect the email address you give us, and a note of where on the site you signed up. That is the only personal information you hand us directly.</p>
+  <p>Like most websites, ours also records basic, anonymous activity, which pages are visited and roughly where visitors come from, so we understand what is working. This is counted in aggregate and is not tied to your name.</p>
+
+  <h2>Why we collect it</h2>
+  <ul>
+    <li>To write to you before a session is announced, if you asked us to.</li>
+    <li>To understand how people find and move through the site, so we can improve it.</li>
+    <li>To measure whether our advertising reaches the right people.</li>
+  </ul>
+
+  <h2>Who helps us run this</h2>
+  <p>A few trusted services process this information on our behalf. We share only what each one needs.</p>
+  <ul>
+    <li><strong>Supabase</strong> securely stores the mailing list.</li>
+    <li><strong>Resend</strong> delivers our email to you.</li>
+    <li><strong>Vercel</strong> hosts the site and provides anonymous visitor analytics.</li>
+    <li><strong>Meta (Facebook)</strong> provides a pixel that helps us measure and target advertising. You can manage ad preferences in your Meta account settings.</li>
+    <li><strong>Eventbrite</strong> sells and manages tickets. When you buy a ticket, Eventbrite handles your purchase and payment details under its own privacy policy.</li>
+  </ul>
+
+  <h2>Cookies and tracking</h2>
+  <p>The site uses a small amount of cookies and similar technology for analytics and advertising measurement, through the services above. You can control or block cookies in your browser settings. Doing so will not stop you from reading the site or buying a ticket.</p>
+
+  <h2>What we never do</h2>
+  <p>We do not sell your information. We do not rent or trade your email. We do not send you noise. You hear from us before a session, and not otherwise.</p>
+
+  <h2>Your choices</h2>
+  <p>You can leave the mailing list at any time. Email us and we will remove you, and your address, promptly. You may also ask what we hold about you, or ask us to delete it.</p>
+
+  <h2>Reaching us</h2>
+  <p>Questions about privacy, or any request above, can be sent to <a href="mailto:hello@nightskysessions.ca">hello@nightskysessions.ca</a>. We read every message.</p>
+
+  <hr class="hairline">
+  <p class="meta">Not a cover. A confession.</p>
+</main>
+
+<footer>
+  <p class="foot-tag">Not a cover. A confession.</p>
+  <p class="legal">© 2026 NightSky Sessions &nbsp;·&nbsp; <a href="/">nightskysessions.ca</a></p>
+</footer>
+
+</body>
+</html>
